@@ -1,0 +1,70 @@
+[
+  {
+    "id": "mis-trust-lucia-jason",
+    "title": "Trust Is Everything",
+    "type": "STORY",
+    "giver": "Lucia & Jason",
+    "prerequisites": [],
+    "unlocks": ["mis-highway-express", "safehouse-ocean-motel"],
+    "rewards": {
+      "cash": 2500,
+      "items": ["Vice Motel Key", "Bandana"]
+    },
+    "hasSpoilers": false,
+    "summary": "Introductory joint robbery narrative establishing the dynamic and trust between Lucia and Jason.",
+    "coordinates": { "x": 3310, "y": 2190 },
+    "verificationStatus": "CONFIRMED",
+    "sources": [
+      {
+        "title": "Rockstar Games Trailer 1 (1:10 - 1:25)",
+        "sourceType": "trailer",
+        "publisher": "Rockstar Games"
+      }
+    ]
+  },
+  {
+    "id": "mis-highway-express",
+    "title": "Neon Highway Pursuit",
+    "type": "STORY",
+    "giver": "Jason",
+    "prerequisites": ["mis-trust-lucia-jason"],
+    "unlocks": ["mis-port-heist"],
+    "rewards": {
+      "cash": 4500,
+      "items": ["Police Radio Scanner"]
+    },
+    "hasSpoilers": true,
+    "summary": "High-speed getaway down Ocean Drive evading tactical VCPD cruisers through city alleys.",
+    "coordinates": { "x": 3440, "y": 2150 },
+    "verificationStatus": "CONFIRMED",
+    "sources": [
+      {
+        "title": "Rockstar Games Trailer 1 Highway Police Scene",
+        "sourceType": "trailer",
+        "publisher": "Rockstar Games"
+      }
+    ]
+  },
+  {
+    "id": "mis-port-heist",
+    "title": "Port Gellhorn Freight Seizure",
+    "type": "HEIST",
+    "giver": "Dock Contact",
+    "prerequisites": ["mis-highway-express"],
+    "unlocks": [],
+    "rewards": {
+      "cash": 45000,
+      "items": ["Custom Carbine Rifle"]
+    },
+    "hasSpoilers": true,
+    "summary": "Coordinated nighttime maritime heist targeting an offshore smuggler shipment docked at Port Gellhorn.",
+    "coordinates": { "x": 1110, "y": 2530 },
+    "verificationStatus": "COMMUNITY_REPORTED",
+    "sources": [
+      {
+        "title": "GTA Mapping Community Narrative Analysis",
+        "sourceType": "community"
+      }
+    ]
+  }
+]

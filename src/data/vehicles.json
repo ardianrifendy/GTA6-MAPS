@@ -1,0 +1,144 @@
+[
+  {
+    "id": "veh-cheetah-classic",
+    "name": "Grotti Cheetah Classic",
+    "manufacturer": "Grotti",
+    "class": "Sports",
+    "trackerStatus": "NON_TRACKER",
+    "trackerRemovalMethod": "NOT_AVAILABLE",
+    "sellingEligibility": "UNKNOWN",
+    "estimatedAcquisitionCost": "UNKNOWN",
+    "confirmedResalePrice": "UNKNOWN",
+    "storageEligibility": "CAN_STORE_GARAGE",
+    "acquisitionMethod": "Street spawn parked along Ocean Drive luxury hotel valet bays.",
+    "coordinates": { "x": 3490, "y": 2230 },
+    "regionId": "vice-city-metro",
+    "spawnConditions": "Frequent during evening and night in high-end nightlife zones.",
+    "verificationStatus": "CONFIRMED",
+    "sources": [
+      {
+        "title": "Rockstar Games Trailer 1 (0:19)",
+        "sourceType": "trailer",
+        "publisher": "Rockstar Games"
+      }
+    ]
+  },
+  {
+    "id": "veh-dominator-gt",
+    "name": "Vapid Dominator GT",
+    "manufacturer": "Vapid",
+    "class": "Muscle",
+    "trackerStatus": "NON_TRACKER",
+    "trackerRemovalMethod": "NOT_AVAILABLE",
+    "sellingEligibility": "UNKNOWN",
+    "estimatedAcquisitionCost": "UNKNOWN",
+    "confirmedResalePrice": "UNKNOWN",
+    "storageEligibility": "CAN_STORE_GARAGE",
+    "acquisitionMethod": "Found cruising around Vice City street takeovers and parking lot meets.",
+    "coordinates": { "x": 2720, "y": 2080 },
+    "regionId": "vice-city-metro",
+    "spawnConditions": "Appears during nighttime street meets.",
+    "verificationStatus": "CONFIRMED",
+    "sources": [
+      {
+        "title": "Rockstar Games Trailer 1 (0:46)",
+        "sourceType": "trailer",
+        "publisher": "Rockstar Games"
+      }
+    ]
+  },
+  {
+    "id": "veh-bravado-banshee",
+    "name": "Bravado Banshee GTS",
+    "manufacturer": "Bravado",
+    "class": "Sports",
+    "trackerStatus": "NON_TRACKER",
+    "trackerRemovalMethod": "NOT_AVAILABLE",
+    "sellingEligibility": "UNKNOWN",
+    "estimatedAcquisitionCost": "UNKNOWN",
+    "confirmedResalePrice": "UNKNOWN",
+    "storageEligibility": "CAN_STORE_GARAGE",
+    "acquisitionMethod": "Parked behind Starfish Island private dock mansion.",
+    "coordinates": { "x": 3210, "y": 2110 },
+    "regionId": "vice-city-metro",
+    "spawnConditions": "Daytime spawn; alarm trigger risk on entry.",
+    "verificationStatus": "VERIFIED_COMMUNITY",
+    "sources": [
+      {
+        "title": "GTA Mapping Vehicle Sighting Database #14",
+        "sourceType": "mapping_project"
+      }
+    ]
+  },
+  {
+    "id": "veh-police-cruiser-vcpd",
+    "name": "VCPD Police Interceptor",
+    "manufacturer": "Vapid",
+    "class": "Emergency",
+    "trackerStatus": "TRACKER",
+    "trackerRemovalMethod": "UNKNOWN",
+    "sellingEligibility": "NON_SELLABLE",
+    "estimatedAcquisitionCost": "UNKNOWN",
+    "confirmedResalePrice": "UNKNOWN",
+    "storageEligibility": "CANNOT_STORE",
+    "acquisitionMethod": "Patrol units and police precinct parking lots.",
+    "coordinates": { "x": 2860, "y": 1890 },
+    "regionId": "vice-city-metro",
+    "spawnConditions": "Permanent at police stations; 1-star wanted level on entry.",
+    "verificationStatus": "CONFIRMED",
+    "sources": [
+      {
+        "title": "Rockstar Games Trailer 1 (0:52)",
+        "sourceType": "trailer",
+        "publisher": "Rockstar Games"
+      }
+    ]
+  },
+  {
+    "id": "veh-everglades-airboat",
+    "name": "Nagasaki Swamp Glider (Airboat)",
+    "manufacturer": "Nagasaki",
+    "class": "Boat",
+    "trackerStatus": "NON_TRACKER",
+    "trackerRemovalMethod": "NOT_AVAILABLE",
+    "sellingEligibility": "UNKNOWN",
+    "estimatedAcquisitionCost": "UNKNOWN",
+    "confirmedResalePrice": "UNKNOWN",
+    "storageEligibility": "UNKNOWN",
+    "acquisitionMethod": "Docked at Grassrivers eco-tour landing platforms.",
+    "coordinates": { "x": 1960, "y": 2440 },
+    "regionId": "grassrivers",
+    "spawnConditions": "Available at tourist pier during daytime.",
+    "verificationStatus": "CONFIRMED",
+    "sources": [
+      {
+        "title": "Rockstar Games Trailer 1 (0:30)",
+        "sourceType": "trailer",
+        "publisher": "Rockstar Games"
+      }
+    ]
+  },
+  {
+    "id": "veh-port-hauler-truck",
+    "name": "Jobuilt Hauler Flatbed",
+    "manufacturer": "Jobuilt",
+    "class": "Commercial",
+    "trackerStatus": "UNKNOWN",
+    "trackerRemovalMethod": "UNKNOWN",
+    "sellingEligibility": "UNKNOWN",
+    "estimatedAcquisitionCost": "UNKNOWN",
+    "confirmedResalePrice": "UNKNOWN",
+    "storageEligibility": "CANNOT_STORE",
+    "acquisitionMethod": "Found transporting freight containers inside Port Gellhorn cargo terminal.",
+    "coordinates": { "x": 1150, "y": 2550 },
+    "regionId": "port-gellhorn",
+    "spawnConditions": "Continuous freight loop inside terminal.",
+    "verificationStatus": "VERIFIED_COMMUNITY",
+    "sources": [
+      {
+        "title": "GTA Mapping Community Port Gellhorn Survey",
+        "sourceType": "mapping_project"
+      }
+    ]
+  }
+]

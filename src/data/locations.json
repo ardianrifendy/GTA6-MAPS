@@ -1,0 +1,124 @@
+[
+  {
+    "id": "loc-ocean-drive",
+    "name": "Ocean Drive Art Deco Strip",
+    "category": "locations",
+    "regionId": "vice-city-metro",
+    "coordinates": { "x": 3480, "y": 2240 },
+    "description": "Iconic beachfront avenue lined with neon pastel hotels, palm trees, and luxury sports cars.",
+    "verificationStatus": "CONFIRMED",
+    "sources": [
+      {
+        "title": "Rockstar Games Trailer 1 (0:18)",
+        "sourceType": "trailer",
+        "publisher": "Rockstar Games",
+        "accessedAt": "2023-12-05"
+      }
+    ],
+    "tags": ["beachfront", "nightlife", "luxury-cars"],
+    "isInterior": false
+  },
+  {
+    "id": "loc-starfish-island",
+    "name": "Starfish Island Mansions",
+    "category": "locations",
+    "regionId": "vice-city-metro",
+    "coordinates": { "x": 3180, "y": 2120 },
+    "description": "Gated high-security residential island featuring palatial waterfront estates and yacht docks.",
+    "verificationStatus": "CONFIRMED",
+    "sources": [
+      {
+        "title": "GTA VI Community Mapping Project v0.8",
+        "sourceType": "mapping_project",
+        "publisher": "GTA Mapping Community",
+        "accessedAt": "2024-03-10"
+      }
+    ],
+    "tags": ["high-security", "heist-target", "mansions"]
+  },
+  {
+    "id": "loc-downtown-financial",
+    "name": "Downtown Vice City Financial District",
+    "category": "locations",
+    "regionId": "vice-city-metro",
+    "coordinates": { "x": 2880, "y": 1920 },
+    "description": "Skyscrapers, financial institutions, corporate headquarters, and high-end retail banks.",
+    "verificationStatus": "CONFIRMED",
+    "sources": [
+      {
+        "title": "Rockstar Games Trailer 1 (0:42)",
+        "sourceType": "trailer",
+        "publisher": "Rockstar Games"
+      }
+    ],
+    "tags": ["commercial", "rooftop-access", "banks"]
+  },
+  {
+    "id": "loc-port-gellhorn-docks",
+    "name": "Port Gellhorn Cargo Terminal",
+    "category": "locations",
+    "regionId": "port-gellhorn",
+    "coordinates": { "x": 1120, "y": 2520 },
+    "description": "Vast commercial shipping docks with shipping containers, freight cranes, and import/export warehouses.",
+    "verificationStatus": "CONFIRMED",
+    "sources": [
+      {
+        "title": "GTA VI Leaked Gameplay & Mapping Analysis",
+        "sourceType": "leak_analysis",
+        "accessedAt": "2023-09-19"
+      }
+    ],
+    "tags": ["industrial", "vehicle-export", "smuggling"]
+  },
+  {
+    "id": "loc-grassrivers-camp",
+    "name": "Grassrivers Alligator Sanctuary & Airboat Depot",
+    "category": "locations",
+    "regionId": "grassrivers",
+    "coordinates": { "x": 1980, "y": 2420 },
+    "description": "Deep wetlands base camp with airboat launches, wooden boardwalks, and dense wildlife.",
+    "verificationStatus": "CONFIRMED",
+    "sources": [
+      {
+        "title": "Rockstar Games Trailer 1 (0:31)",
+        "sourceType": "trailer",
+        "publisher": "Rockstar Games"
+      }
+    ],
+    "tags": ["airboats", "nature", "hidden-cache"]
+  },
+  {
+    "id": "loc-keys-bridge",
+    "name": "Seven Mile Causeway to Leonida Keys",
+    "category": "locations",
+    "regionId": "leonida-keys",
+    "coordinates": { "x": 2320, "y": 3340 },
+    "description": "Long highway bridge crossing the open turquoise ocean toward the southern tropical keys.",
+    "verificationStatus": "CONFIRMED",
+    "sources": [
+      {
+        "title": "Rockstar Games Trailer 1 (0:24)",
+        "sourceType": "trailer",
+        "publisher": "Rockstar Games"
+      }
+    ],
+    "tags": ["scenic-route", "bridge", "high-speed-run"]
+  },
+  {
+    "id": "loc-ambrosia-speedway",
+    "name": "Ambrosia County Dirt Track & Speedway",
+    "category": "locations",
+    "regionId": "ambrosia-county",
+    "coordinates": { "x": 1780, "y": 920 },
+    "description": "Mud racing arena and demolition derby track frequented by local off-road enthusiasts.",
+    "verificationStatus": "COMMUNITY_REPORTED",
+    "sources": [
+      {
+        "title": "GTA Mapping Community Speculative Landmark Index",
+        "sourceType": "community",
+        "accessedAt": "2024-06-15"
+      }
+    ],
+    "tags": ["dirt-track", "demolition", "racing"]
+  }
+]

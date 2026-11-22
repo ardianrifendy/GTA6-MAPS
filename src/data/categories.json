@@ -1,0 +1,51 @@
+[
+  {
+    "id": "locations",
+    "name": "Points of Interest",
+    "icon": "MapPin",
+    "color": "#00F0FF",
+    "description": "Key landmarks, districts, and notable structures in Leonida"
+  },
+  {
+    "id": "vehicles",
+    "name": "Vehicle Finder",
+    "icon": "Car",
+    "color": "#FF007A",
+    "description": "Rare vehicles, sports cars, tracker & non-tracker status"
+  },
+  {
+    "id": "money",
+    "name": "Money Finder",
+    "icon": "DollarSign",
+    "color": "#10B981",
+    "description": "Verified high-value robbery, heists, and farming locations"
+  },
+  {
+    "id": "missions",
+    "name": "Missions & Story",
+    "icon": "Target",
+    "color": "#FFB800",
+    "description": "Story quests, stranger events, and bounties"
+  },
+  {
+    "id": "collectibles",
+    "name": "Collectibles",
+    "icon": "Sparkles",
+    "color": "#7928CA",
+    "description": "Hidden packages, spray tags, stunt jumps, and treasures"
+  },
+  {
+    "id": "services",
+    "name": "Services & Shops",
+    "icon": "Wrench",
+    "color": "#3B82F6",
+    "description": "Pay 'n' Spray, gun stores, clothing outlets, safehouses"
+  },
+  {
+    "id": "personal",
+    "name": "My Markers",
+    "icon": "Bookmark",
+    "color": "#F97316",
+    "description": "Your custom waypoints, notes, and pinned spots"
+  }
+]

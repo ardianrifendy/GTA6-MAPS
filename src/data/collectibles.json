@@ -1,0 +1,70 @@
+[
+  {
+    "id": "col-package-01",
+    "name": "Hidden Vice Contraband Package #01",
+    "set": "Hidden Packages",
+    "setTotal": 50,
+    "setIndex": 1,
+    "coordinates": { "x": 3520, "y": 2280 },
+    "regionId": "vice-city-metro",
+    "clue": "Underneath the wooden lifeguard observation tower at Ocean Beach south tip.",
+    "verificationStatus": "VERIFIED_COMMUNITY",
+    "sources": [
+      {
+        "title": "GTA Mapping Community Collectibles Index",
+        "sourceType": "mapping_project"
+      }
+    ]
+  },
+  {
+    "id": "col-package-02",
+    "name": "Hidden Vice Contraband Package #02",
+    "set": "Hidden Packages",
+    "setTotal": 50,
+    "setIndex": 2,
+    "coordinates": { "x": 3190, "y": 2140 },
+    "regionId": "vice-city-metro",
+    "clue": "Behind the hedge gazebo garden on Starfish Island canal mansion.",
+    "verificationStatus": "COMMUNITY_REPORTED",
+    "sources": [
+      {
+        "title": "GTA Community Speculative Intel",
+        "sourceType": "community"
+      }
+    ]
+  },
+  {
+    "id": "col-stunt-01",
+    "name": "Vice Causeway Billboard Stunt Jump",
+    "set": "Stunt Jumps",
+    "setTotal": 25,
+    "setIndex": 1,
+    "coordinates": { "x": 2510, "y": 2890 },
+    "regionId": "vice-city-metro",
+    "clue": "Broken construction ramp overlooking the elevated expressway turn.",
+    "verificationStatus": "VERIFIED_COMMUNITY",
+    "sources": [
+      {
+        "title": "Trailer 1 Stunt Location Analysis",
+        "sourceType": "mapping_project"
+      }
+    ]
+  },
+  {
+    "id": "col-swamp-totem-01",
+    "name": "Grassrivers Folklore Totem",
+    "set": "Folklore Artifacts",
+    "setTotal": 15,
+    "setIndex": 1,
+    "coordinates": { "x": 2010, "y": 2480 },
+    "regionId": "grassrivers",
+    "clue": "Carved wooden effigy hidden inside a hollow cypress tree island in the swamp.",
+    "verificationStatus": "UNVERIFIED",
+    "sources": [
+      {
+        "title": "Leonida Folklore Lore Thread",
+        "sourceType": "community"
+      }
+    ]
+  }
+]

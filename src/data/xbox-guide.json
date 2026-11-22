@@ -1,0 +1,78 @@
+[
+  {
+    "id": "xbox-ctrl-driving",
+    "title": "Vehicle & Airboat Controls",
+    "category": "CONTROLS",
+    "inputSequence": ["RT: Accelerate", "LT: Brake/Reverse", "A: Handbrake", "LB: Fire Drive-by Weapon", "RB: Cinematic Camera", "Left Stick: Steer"],
+    "effect": "Standard responsive vehicle, motorcycle, and airboat piloting scheme on Xbox Wireless Controller.",
+    "disablesAchievements": false,
+    "verificationStatus": "CONFIRMED",
+    "sources": [
+      {
+        "title": "Rockstar Standard Controller Schema for Xbox Series X/S",
+        "sourceType": "official",
+        "publisher": "Rockstar Games"
+      }
+    ]
+  },
+  {
+    "id": "xbox-ctrl-combat",
+    "title": "Dual Weapon & Cover Combat",
+    "category": "CONTROLS",
+    "inputSequence": ["LT: Aim Lock/Soft Lock", "RT: Fire Weapon", "RB: Take Cover", "LB: Weapon Wheel (Hold)", "X: Combat Roll / Reload", "B: Melee / Stealth Takedown"],
+    "effect": "On-foot gunplay, tactical cover maneuvering, and Lucia/Jason stealth mechanics.",
+    "disablesAchievements": false,
+    "verificationStatus": "CONFIRMED",
+    "sources": [
+      {
+        "title": "Rockstar Games Gameplay Control Standard",
+        "sourceType": "official"
+      }
+    ]
+  },
+  {
+    "id": "xbox-tip-quick-swap",
+    "title": "Lucia & Jason Character Hot-Swap",
+    "category": "SHORTCUTS",
+    "inputSequence": ["D-Pad Down (Hold) + Right Stick"],
+    "effect": "Instantly switch active character perspective between Lucia and Jason when in free-roam.",
+    "disablesAchievements": false,
+    "verificationStatus": "VERIFIED_COMMUNITY",
+    "sources": [
+      {
+        "title": "Gameplay Footage Analysis of Dual Protagonist UI",
+        "sourceType": "leak_analysis"
+      }
+    ]
+  },
+  {
+    "id": "xbox-cheat-status-notice",
+    "title": "GTA VI Cheat Codes Status Notice",
+    "category": "CHEAT_CODES",
+    "inputSequence": ["STATUS: PENDING GAME LAUNCH"],
+    "effect": "Rockstar Games has not yet officially published button cheat sequences for GTA VI. Beware of fraudulent internet generator sites.",
+    "disablesAchievements": true,
+    "verificationStatus": "CONFIRMED",
+    "sources": [
+      {
+        "title": "Official Rockstar Games Policy on Unreleased Titles",
+        "sourceType": "official"
+      }
+    ]
+  },
+  {
+    "id": "xbox-cheat-legacy-spawn",
+    "title": "Legacy Reference: Fast Sports Car Spawn",
+    "category": "CHEAT_CODES",
+    "inputSequence": ["B", "LB", "Left", "RB", "LT", "A", "RB", "LB", "B", "A"],
+    "effect": "Historical Xbox code pattern from GTA V / GTA San Andreas. NOT CONFIRMED for GTA VI.",
+    "disablesAchievements": true,
+    "verificationStatus": "UNVERIFIED",
+    "sources": [
+      {
+        "title": "Historical GTA Xbox Cheat Code Archive (For Reference Only)",
+        "sourceType": "community"
+      }
+    ]
+  }
+]

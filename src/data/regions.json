@@ -1,0 +1,37 @@
+[
+  {
+    "id": "vice-city-metro",
+    "name": "Vice City Metro",
+    "code": "VCM",
+    "description": "The neon metropolitan heart: Ocean Beach, Downtown, Little Haiti, and Starfish Island.",
+    "highlightColor": "#FF007A"
+  },
+  {
+    "id": "port-gellhorn",
+    "name": "Port Gellhorn",
+    "code": "PGH",
+    "description": "Industrial coastal port and shipping hub to the west.",
+    "highlightColor": "#00F0FF"
+  },
+  {
+    "id": "grassrivers",
+    "name": "Grassrivers Wetlands",
+    "code": "GRW",
+    "description": "Expansive swamp marshland, alligators, airboat waterways, and hidden stash camps.",
+    "highlightColor": "#10B981"
+  },
+  {
+    "id": "leonida-keys",
+    "name": "Leonida Keys",
+    "code": "LKY",
+    "description": "Chain of scenic southern islands connected by long ocean causeways.",
+    "highlightColor": "#FFB800"
+  },
+  {
+    "id": "ambrosia-county",
+    "name": "Ambrosia & Rural North",
+    "code": "AMB",
+    "description": "Farmlands, dirt tracks, rural communities, and foothills.",
+    "highlightColor": "#8B5CF6"
+  }
+]

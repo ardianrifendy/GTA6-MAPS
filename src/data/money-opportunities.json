@@ -1,0 +1,94 @@
+[
+  {
+    "id": "money-liquor-store-vice",
+    "name": "Uncle Jack's Liquor Store Register",
+    "title": "Uncle Jack's Liquor Store Robbery",
+    "type": "FAST_CASH",
+    "minPayout": 750,
+    "maxPayout": 1800,
+    "estimatedMinutes": 3,
+    "repeatability": "COOLDOWN_BASED",
+    "cooldownMinutes": 45,
+    "riskLevel": "LOW",
+    "difficulty": "EASY",
+    "prerequisites": ["Equipped Firearm or Intimidation Tool"],
+    "coordinates": { "x": 3320, "y": 2180 },
+    "regionId": "vice-city-metro",
+    "verificationStatus": "CONFIRMED",
+    "sources": [
+      {
+        "title": "Rockstar Games Trailer 1 Convenience Store Hold-up Scene (1:12)",
+        "sourceType": "trailer",
+        "publisher": "Rockstar Games"
+      }
+    ]
+  },
+  {
+    "id": "money-cargo-heist-docks",
+    "name": "Port Gellhorn Smuggler Container Hijack",
+    "title": "Port Gellhorn Smuggler Container Hijack",
+    "type": "HIGH_VALUE",
+    "minPayout": 18000,
+    "maxPayout": 35000,
+    "estimatedMinutes": 18,
+    "repeatability": "COOLDOWN_BASED",
+    "cooldownMinutes": 120,
+    "riskLevel": "HIGH",
+    "difficulty": "HARD",
+    "prerequisites": ["Hacking Device", "Escape Vehicle", "Automatic Weaponry"],
+    "coordinates": { "x": 1090, "y": 2510 },
+    "regionId": "port-gellhorn",
+    "verificationStatus": "COMMUNITY_REPORTED",
+    "sources": [
+      {
+        "title": "GTA Mapping Community Speculative Heist Analysis",
+        "sourceType": "community"
+      }
+    ]
+  },
+  {
+    "id": "money-airboat-swamp-cache",
+    "name": "Grassrivers Sunken Contraband Caches",
+    "title": "Grassrivers Sunken Contraband Route",
+    "type": "REPEATABLE_FARMING",
+    "minPayout": 2400,
+    "maxPayout": 4200,
+    "estimatedMinutes": 8,
+    "repeatability": "COOLDOWN_BASED",
+    "cooldownMinutes": 30,
+    "riskLevel": "MEDIUM",
+    "difficulty": "MEDIUM",
+    "prerequisites": ["Airboat or Wetland Vehicle", "Diving Mask"],
+    "coordinates": { "x": 2040, "y": 2390 },
+    "regionId": "grassrivers",
+    "verificationStatus": "VERIFIED_COMMUNITY",
+    "sources": [
+      {
+        "title": "GTA Mapping Project Wetland Discovery Index",
+        "sourceType": "mapping_project"
+      }
+    ]
+  },
+  {
+    "id": "money-downtown-atm-skimming",
+    "name": "Downtown Financial ATM Network",
+    "title": "Downtown Financial ATM Network",
+    "type": "FAST_CASH",
+    "minPayout": 1200,
+    "maxPayout": 2500,
+    "estimatedMinutes": 5,
+    "repeatability": "INFINITE",
+    "riskLevel": "LOW",
+    "difficulty": "EASY",
+    "prerequisites": ["Crowbar or Skimmer"],
+    "coordinates": { "x": 2890, "y": 1940 },
+    "regionId": "vice-city-metro",
+    "verificationStatus": "UNVERIFIED",
+    "sources": [
+      {
+        "title": "Community Gameplay Speculation Forum",
+        "sourceType": "community"
+      }
+    ]
+  }
+]
