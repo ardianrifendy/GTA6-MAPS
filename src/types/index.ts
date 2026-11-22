@@ -1,3 +1,11 @@
+export type BasemapMode = "satellite" | "dark_gis" | "custom_tiles" | "custom_image";
+
+export interface BasemapConfig {
+  mode: BasemapMode;
+  tileUrlTemplate?: string;
+  customImageUrl?: string;
+}
+
 export type VerificationStatus =
   | "CONFIRMED"
   | "VERIFIED_COMMUNITY"

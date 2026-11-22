@@ -14,6 +14,8 @@ import {
   Layers,
   Eye,
   EyeOff,
+  CheckCheck,
+  XCircle,
 } from "lucide-react";
 
 export type ActiveView =
@@ -32,7 +34,10 @@ interface SidebarProps {
   onViewChange: (view: ActiveView) => void;
   activeLayers: Record<string, boolean>;
   onToggleLayer: (layerId: string) => void;
-  categories: Array<{ id: string; name: string; color: string; count?: number }>;
+  onShowAllLayers?: () => void;
+  onHideAllLayers?: () => void;
+  categories: Array<{ id: string; name: string; color: string }>;
+  layerStats?: Record<string, { found: number; total: number }>;
   routeStopCount: number;
 }
 
@@ -41,7 +46,10 @@ export function Sidebar({
   onViewChange,
   activeLayers,
   onToggleLayer,
+  onShowAllLayers,
+  onHideAllLayers,
   categories,
+  layerStats = {},
   routeStopCount,
 }: SidebarProps) {
   const navItems = [
@@ -61,7 +69,7 @@ export function Sidebar({
       {/* Primary Navigation */}
       <div className="p-3 space-y-1">
         <div className="px-2 pb-2 text-[10px] font-bold uppercase tracking-wider text-slate-400">
-          Intelligence Modules
+          Navigation & Modules
         </div>
         {navItems.map((item) => {
           const Icon = item.icon;
@@ -98,37 +106,69 @@ export function Sidebar({
           );
         })}
 
-        {/* Map Layers Section (visible when on map view) */}
+        {/* MapGenie Style Category Layers Section (visible when on map view) */}
         {activeView === "map" && (
           <div className="pt-4 border-t border-slate-800 mt-4 space-y-2">
             <div className="px-2 flex items-center justify-between text-[10px] font-bold uppercase tracking-wider text-slate-400">
               <div className="flex items-center gap-1.5">
                 <Layers className="w-3.5 h-3.5 text-cyan-400" />
-                <span>Map Layers</span>
+                <span>Categories & Layers</span>
+              </div>
+
+              {/* Show All / Hide All (MapGenie signature buttons) */}
+              <div className="flex items-center gap-1 text-[9px]">
+                {onShowAllLayers && (
+                  <button
+                    onClick={onShowAllLayers}
+                    className="px-1.5 py-0.5 rounded bg-slate-800 hover:bg-slate-700 text-cyan-400 font-semibold"
+                    title="Show All Layers"
+                  >
+                    SHOW ALL
+                  </button>
+                )}
+                {onHideAllLayers && (
+                  <button
+                    onClick={onHideAllLayers}
+                    className="px-1.5 py-0.5 rounded bg-slate-800 hover:bg-slate-700 text-slate-400 hover:text-white font-semibold"
+                    title="Hide All Layers"
+                  >
+                    HIDE ALL
+                  </button>
+                )}
               </div>
             </div>
 
             <div className="space-y-1 px-1">
               {categories.map((cat) => {
                 const isVisible = activeLayers[cat.id] !== false;
+                const stats = layerStats[cat.id];
+
                 return (
                   <button
                     key={cat.id}
                     onClick={() => onToggleLayer(cat.id)}
-                    className="w-full flex items-center justify-between px-2.5 py-1.5 rounded text-xs text-slate-300 hover:bg-slate-800/60 transition"
+                    className="w-full flex items-center justify-between px-2.5 py-1.5 rounded text-xs text-slate-300 hover:bg-slate-800/60 transition group"
                   >
-                    <div className="flex items-center gap-2">
+                    <div className="flex items-center gap-2 truncate mr-2">
                       <span
                         className="w-2.5 h-2.5 rounded-full shrink-0"
                         style={{ backgroundColor: cat.color }}
                       />
                       <span className="truncate">{cat.name}</span>
                     </div>
-                    {isVisible ? (
-                      <Eye className="w-3.5 h-3.5 text-cyan-400 shrink-0" />
-                    ) : (
-                      <EyeOff className="w-3.5 h-3.5 text-slate-600 shrink-0" />
-                    )}
+
+                    <div className="flex items-center gap-1.5 shrink-0">
+                      {stats && stats.total > 0 && (
+                        <span className="text-[10px] font-mono text-slate-400">
+                          {stats.found}/{stats.total}
+                        </span>
+                      )}
+                      {isVisible ? (
+                        <Eye className="w-3.5 h-3.5 text-cyan-400 shrink-0" />
+                      ) : (
+                        <EyeOff className="w-3.5 h-3.5 text-slate-600 group-hover:text-slate-400 shrink-0" />
+                      )}
+                    </div>
                   </button>
                 );
               })}
@@ -140,11 +180,11 @@ export function Sidebar({
       {/* Footer Info Box */}
       <div className="p-3 border-t border-slate-800 bg-slate-900/60 m-2 rounded-lg text-[11px] text-slate-400 space-y-1">
         <div className="flex items-center justify-between text-slate-300 font-semibold">
-          <span>Leonida GIS Engine</span>
-          <span className="text-[10px] px-1 bg-cyan-500/20 text-cyan-400 rounded">CRS.Simple</span>
+          <span>Map Engine</span>
+          <span className="text-[10px] px-1 bg-cyan-500/20 text-cyan-400 rounded">MapGenie / Leaflet</span>
         </div>
         <p className="text-[10px] text-slate-400 leading-tight">
-          Client-first zero-telemetry architecture. All bookmarks and progress saved locally.
+          Supports custom XYZ tile endpoints & raster overlays. LocalStorage state tracking.
         </p>
       </div>
     </aside>

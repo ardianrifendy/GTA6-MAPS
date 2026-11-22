@@ -216,6 +216,33 @@ export default function CompanionApp() {
   }, [userState.activeRouteIds, unifiedMarkers]);
 
   // Actions
+  // Layer Stats (Found / Total per Category for MapGenie-style counters)
+  const layerStats = useMemo(() => {
+    const stats: Record<string, { found: number; total: number }> = {};
+    rawCategories.forEach((cat) => {
+      const itemsInCat = unifiedMarkers.filter((m) => m.category === cat.id);
+      const foundInCat = itemsInCat.filter((m) => userState.foundItemIds.includes(m.id));
+      stats[cat.id] = { found: foundInCat.length, total: itemsInCat.length };
+    });
+    return stats;
+  }, [unifiedMarkers, userState.foundItemIds]);
+
+  const handleShowAllLayers = () => {
+    const allTrue: Record<string, boolean> = {};
+    rawCategories.forEach((c) => {
+      allTrue[c.id] = true;
+    });
+    setActiveLayers(allTrue);
+  };
+
+  const handleHideAllLayers = () => {
+    const allFalse: Record<string, boolean> = {};
+    rawCategories.forEach((c) => {
+      allFalse[c.id] = false;
+    });
+    setActiveLayers(allFalse);
+  };
+
   const handleToggleLayer = (layerId: string) => {
     setActiveLayers((prev) => ({
       ...prev,
@@ -351,7 +378,10 @@ export default function CompanionApp() {
           }}
           activeLayers={activeLayers}
           onToggleLayer={handleToggleLayer}
+          onShowAllLayers={handleShowAllLayers}
+          onHideAllLayers={handleHideAllLayers}
           categories={rawCategories}
+          layerStats={layerStats}
           routeStopCount={userState.activeRouteIds.length}
         />
 
@@ -368,6 +398,10 @@ export default function CompanionApp() {
                 routeStops={routeStops}
                 onMapClickAddPersonal={handleMapClickAddPersonal}
                 isPinMode={isPinMode}
+                foundIds={userState.foundItemIds}
+                onToggleFound={handleToggleFound}
+                onToggleRoute={handleToggleRoute}
+                isInRoute={(id) => userState.activeRouteIds.includes(id)}
               />
             </div>
           )}
